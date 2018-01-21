@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: plex-k8s-service
+  name: pms-service
 spec:
   selector:
-    app: plex-k8s
+    app: plex-media-server
   ports:
   -  protocol: TCP
      port: 80
