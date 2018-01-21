@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: pms-pvc-drive1
+  name: pms-pvc-drive3
 spec:
   storageClassName: manual
   accessModes:
