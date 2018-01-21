@@ -1,0 +1,14 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: plex-k8s-pv-volume-drive3
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 2.8Ti
+  accessModes:
+      - ReadWriteOnce
+  hostPath:
+    path: "/drive3"
