@@ -6,16 +6,18 @@ metadata:
     app: plex-media-server
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      app: plex-media-server
   template:
     metadata:
       labels:
         app: plex-media-server
     spec:
       containers:
-      - name: plexinc/pms-docker
+      - name: pms
         image: plexinc/pms-docker:latest
         ports:
         - containerPort: 32400
+      volumes:
+      - name: work-volume
+        persistentVolumeClaim:
+          claimName: report-api-pvc
+          #  claimName: report-api-pvc
