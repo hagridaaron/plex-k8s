@@ -1,10 +1,6 @@
-{
-    "kind": "Namespace",
-    "apiVersion": "v1",
-    "metadata": {
-        "name": "plex media server",
-        "Labels": {
-            "name: "plex media server"
-        }
-    }
-}
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: plex-k8s
+  labels:
+    app: plex-k8s 
