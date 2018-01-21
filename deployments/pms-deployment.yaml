@@ -16,6 +16,17 @@ spec:
         image: plexinc/pms-docker:latest
         ports:
         - containerPort: 32400
+        volumeMounts:
+        - name: drive1
+          mountPath: /drive1
+        - name: drive2
+          mountPath: /drive2
+        - name: drive3
+          mountPath: /drive3
+        - name: drive4
+          mountPath: /drive4
+
+
       volumes:
       - name: drive1
         persistentVolumeClaim:
