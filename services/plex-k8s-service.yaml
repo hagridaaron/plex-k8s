@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: plex-k8s-service
+spec:
+  selector:
+    app: plex-k8s
+  ports:
+  -  protocol: TCP
+     port: 80
+     targetPort: 32400
