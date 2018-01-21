@@ -1,7 +1,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: plex-k8s-pv-volume-drive3
+  name: pms-pv-drive3
   labels:
     type: local
 spec:

@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 matadata:
-  name: plex-k8s-pvc-volume-drive1
+  name: pms-pvc-drive1
 spec:
   storageClassName: manual
   accessModes:
