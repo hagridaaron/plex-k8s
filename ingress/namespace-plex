@@ -1,0 +1,10 @@
+{
+    "kind": "Namespace",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "plex media server",
+        "Labels": {
+            "name: "plex media server"
+        }
+    }
+}
