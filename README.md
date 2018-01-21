@@ -7,7 +7,7 @@ Namespace | **plex**
 
 I'll fill the rest of this in when I've done some more work. 
 
-##TODO:
+## TODO:
 - [ ] plex media server: configmap
 - [ ] plex media server: service
 - [ ] plex media server: deployment
