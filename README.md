@@ -1,4 +1,4 @@
-#Plex in Kubernetes
+# Plex in Kubernetes
 I'm using images from the plexinc github repo, found [here](https://github.com/plexinc/pms-docker).
 
 Namespace | **plex**
