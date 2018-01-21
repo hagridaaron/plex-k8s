@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: v1
 kind: Deployment
 metadata:
   name: pms-deployment
@@ -20,7 +20,7 @@ spec:
       - name: drive1
         persistentVolumeClaim:
           claimName: pms-pvc-drive1
-          
+
       - name: drive2
         persistentVolumeClaim:
           claimName: pms-pvc-drive2
