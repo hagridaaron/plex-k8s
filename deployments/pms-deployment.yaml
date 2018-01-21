@@ -17,7 +17,18 @@ spec:
         ports:
         - containerPort: 32400
       volumes:
-      - name: work-volume
+      - name: drive1
         persistentVolumeClaim:
-          claimName: report-api-pvc
-          #  claimName: report-api-pvc
+          claimName: pms-pvc-drive1
+          
+      - name: drive2
+        persistentVolumeClaim:
+          claimName: pms-pvc-drive2
+
+      - name: drive3
+        persistentVolumeClaim:
+          claimName: pms-pvc-drive3
+
+      - name: drive4
+        persistentVolumeClaim:
+          claimName: pms-pvc-drive4
