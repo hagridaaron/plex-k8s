@@ -5,10 +5,11 @@ metadata:
   labels:
     type: local
 spec:
-  storageClassName: manual
+  storageClassName: local-storage
+  persistentVolumeReclaimPolicy: Delete
   capacity:
     storage: 917Gi
   accessModes:
       - ReadWriteOnce
-  hostPath:
+  local:
     path: "/drive4"

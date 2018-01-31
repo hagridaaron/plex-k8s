@@ -17,29 +17,24 @@ spec:
         ports:
         - containerPort: 32400
         volumeMounts:
-        - name: drive1
-          mountPath: /drive1
-        - name: drive2
-          mountPath: /drive2
-        - name: drive3
-          mountPath: /drive3
-        - name: drive4
-          mountPath: /drive4
-
-
+        - mountPath: /drive1
+          name: pms-pv-drive1
+        - mountPath: /drive2
+          name: pms-pv-drive2
+        - mountPath: /drive3
+          name: pms-pv-drive3
+        - mountPath: /drive4
+          name: pms-pv-drive4
       volumes:
-      - name: drive1
-        persistentVolumeClaim:
-          claimName: pms-pvc-drive1
-
-      - name: drive2
-        persistentVolumeClaim:
-          claimName: pms-pvc-drive2
-
-      - name: drive3
-        persistentVolumeClaim:
-          claimName: pms-pvc-drive3
-
-      - name: drive4
-        persistentVolumeClaim:
-          claimName: pms-pvc-drive4
+      - name: pms-pv-drive1
+        hostPath:
+          path: '/drive1'
+      - name: pms-pv-drive2
+        hostPath:
+          path: '/drive2'
+      - name: pms-pv-drive3
+        hostPath:
+          path: '/drive3'
+      - name: pms-pv-drive4
+        hostPath:
+          path: '/drive4'
