@@ -2,9 +2,6 @@ kind: PersistentVolume
 apiVersion: v1
 metadata:
   name: pms-pv-drive1
-    annotations:
-  labels:
-    type: local
 spec:
   storageClassName: local-storage
   affinity:
