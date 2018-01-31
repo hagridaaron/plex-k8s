@@ -15,7 +15,7 @@ spec:
           - key: kubernetes.io/hostname
             operator: In
             values:
-            - minishift
+            - minikube
   capacity:
     storage: 932Gi
   persistentVolumeReclaimPolicy: Delete
