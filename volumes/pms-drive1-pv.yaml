@@ -10,12 +10,8 @@ spec:
   affinity:
     nodeAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
-        nodeSelectorTerms:
-        - matchExpressions:
-          - key: kubernetes.io/hostname
-            operator: In
-            values:
-            - minikube
+        nodeSelector:
+          kubernetes.io/hostname: minikube
   capacity:
     storage: 932Gi
   persistentVolumeReclaimPolicy: Delete
