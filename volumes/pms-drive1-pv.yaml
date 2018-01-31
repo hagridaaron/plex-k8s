@@ -2,6 +2,18 @@ kind: PersistentVolume
 apiVersion: v1
 metadata:
   name: pms-pv-drive1
+    annotations:
+    "volume.alpha.kubernetes.io/node-affinity": '{
+      "requiredDuringSchedulingIgnoredDuringExecution": {
+        "nodeSelectorTerms": [
+          { "matchExpressions": [
+            { "key": "kubernetes.io/hostname",
+              "operator": "In",
+              "values": ["minikube"]
+            }
+          ]}
+         ]}
+        }'
   labels:
     type: local
 spec:
